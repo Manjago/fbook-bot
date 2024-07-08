@@ -48,7 +48,14 @@
                         <goals>
                             <goal>single</goal>
                         </goals>
-                        <phase>package</phase>
+                        <phase>prepare-package</phase>
+                        <configuration>
+                            <descriptors>
+                                <descriptor>src/main/assembly/jar-assembly.xml</descriptor>
+                            </descriptors>
+                            <finalName>${artifactId}-${version}-fat</finalName>
+                            <appendAssemblyId>false</appendAssemblyId>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
