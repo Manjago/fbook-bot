@@ -51,6 +51,10 @@
                                     <mainClass>fbb.Main</mainClass>
                                 </transformer>
                             </transformers>
+                            <minimizeJar>true</minimizeJar>
+                            <entryPoints>
+                                <entryPoint>fbb.Main</entryPoint>
+                            </entryPoints>
                         </configuration>
                     </execution>
                 </executions>
